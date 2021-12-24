@@ -1,9 +1,10 @@
 { pkgs ? import <nixpkgs> {} }:
 
-let 
+let
   NPM_CONFIG_PREFIX = "/home/runner/.npm-global";
 
-in pkgs.mkShell {
+in
+  pkgs.mkShell {
     packages = with pkgs; [
       nodejs-16_x
       nodePackages.npm
@@ -12,6 +13,8 @@ in pkgs.mkShell {
     inherit NPM_CONFIG_PREFIX;
 
     shellHook = ''
+      npm set prefix "${NPM_CONFIG_PREFIX}"
       export PATH="${NPM_CONFIG_PREFIX}/bin:$PATH"
+      npm i -g npm@latest
     '';
   }
