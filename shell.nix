@@ -9,6 +9,7 @@ in
 
     packages = with pkgs; [
       nodejs-16_x
+      nodePackages.typescript-language-server
       (nodePackages.npm.override {
         version = "8.3.0";
         src = fetchurl {
