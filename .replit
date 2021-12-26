@@ -1,2 +1,11 @@
+language = "nix"
 run = "node -v && npm -v"
 
+[packager]
+language = "nodejs-npm"
+
+[packager.features]
+packageSearch = true
+
+[nix]
+channel = "stable-21_11"
