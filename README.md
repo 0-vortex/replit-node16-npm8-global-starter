@@ -1,6 +1,6 @@
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@0-vortex/replit-node16-npm8-global-starter?embed=true"></iframe>
+# Replit Nix Node@16 Npm@8 tutorial
 
-# Getting started with Nix Shell on Replit
+[![Open in Replit](https://repl.it/badge/github/0-vortex/replit-node16-npm8-global-starter)](https://repl.it/github/0-vortex/replit-node16-npm8-global-starter)
 
 > Warning: Nix support on Replit is still under heavy development and is subject to change.
 
