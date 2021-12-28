@@ -19,7 +19,6 @@ syntax = "javascript"
   start = [ "typescript-language-server", "--stdio" ]
 
 [nix]
-#channel = "unstable"
 channel = "stable-21_11"
 
 [env]
