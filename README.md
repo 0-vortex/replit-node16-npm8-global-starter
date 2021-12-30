@@ -10,9 +10,9 @@ To get started there are 2 config files that you can use to customize the enviro
 
 ### `shell.nix` - Configures the nix shell environment
 
-This file should look something like the example below. The `deps` array specifies which Nix packages you would like to be available in your environment. You can search for Nix packages here: https://search.nixos.org/packages
+This file should look something like the example below. The `deps` array is replaced by shell generation.
 
-What we are doing here is getting a sandbox reload mechanism, `node@16` lite and a separate binary install of `npm@8` which wo then configure to sensible userspace defaults:
+What we are doing here is getting a sandbox reload mechanism, `node@16` and a separate binary install of `npm@8` which we then configure to sensible userspace defaults:
 
 ```nix
 { pkgs ? import <nixpkgs> {} }:
